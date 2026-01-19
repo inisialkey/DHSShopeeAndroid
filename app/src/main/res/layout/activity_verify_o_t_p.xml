@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.login.VerifyOTPActivity">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:src="@drawable/icon_send_verify"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txt_Title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_bold"
+                    android:text="@string/title_aktivasi"
+                    android:textAlignment="center"
+                    android:textColor="#292828"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/txt_SubTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Untuk konfirmasi registrasi, Cek Email/Nomor Hp Anda !"
+                    android:textAlignment="center"
+                    android:fontFamily="@font/roboto_medium"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_marginTop="10dp"
+                    >
+
+                    <TextView
+                        android:id="@+id/title_kirimKode"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Kode OTP dikirimkan ke"
+                        android:fontFamily="@font/roboto_regular"
+                        />
+
+                    <TextView
+                        android:id="@+id/textMobile"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Email/Nomor HP"
+                        android:fontFamily="@font/roboto_bold"
+                        android:textSize="14dp"
+                        android:visibility="visible"
+                        />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/subtitle_email_token"
+                        android:textSize="13dp"
+                        />
+
+                    <TextView
+                        android:id="@+id/textResendOTP"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Kirim ulang kode"
+                        android:textAllCaps="true"
+                        android:layout_marginStart="8dp"
+                        android:textColor="#4CAF50"
+                        android:textSize="13dp"
+                        android:fontFamily="@font/roboto_bold"
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="10dp"
+                    >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:paddingTop="5dp"
+                        android:text="Masukan Kode OTP dibawah ini !"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="30dp"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/inputCode1"
+                            android:layout_width="35dp"
+                            android:layout_height="45dp"
+                            android:gravity="center"
+                            android:imeOptions="actionNext"
+                            android:importantForAutofill="no"
+                            android:inputType="number"
+                            android:maxLength="1"
+                            android:textColor="#4E4E4E"
+                            android:textSize="24dp"
+                            android:fontFamily="@font/roboto_bold"
+                            tools:ignore="LabelFor"/>
+
+                        <EditText
+                            android:id="@+id/inputCode2"
+                            android:layout_width="35dp"
+                            android:layout_height="45dp"
+                            android:gravity="center"
+                            android:imeOptions="actionNext"
+                            android:importantForAutofill="no"
+                            android:inputType="number"
+                            android:maxLength="1"
+                            android:textColor="#4E4E4E"
+                            android:textSize="24dp"
+                            android:fontFamily="@font/roboto_bold"
+                            tools:ignore="LabelFor"/>
+
+                        <EditText
+                            android:id="@+id/inputCode3"
+                            android:layout_width="35dp"
+                            android:layout_height="45dp"
+                            android:gravity="center"
+                            android:imeOptions="actionNext"
+                            android:importantForAutofill="no"
+                            android:inputType="number"
+                            android:maxLength="1"
+                            android:textColor="#4E4E4E"
+                            android:textSize="24dp"
+                            android:fontFamily="@font/roboto_bold"
+                            tools:ignore="LabelFor"/>
+
+                        <EditText
+                            android:id="@+id/inputCode4"
+                            android:layout_width="35dp"
+                            android:layout_height="45dp"
+                            android:gravity="center"
+                            android:imeOptions="actionNext"
+                            android:importantForAutofill="no"
+                            android:inputType="number"
+                            android:maxLength="1"
+                            android:textColor="#4E4E4E"
+                            android:textSize="24dp"
+                            android:fontFamily="@font/roboto_bold"
+                            tools:ignore="LabelFor"/>
+
+                        <EditText
+                            android:id="@+id/inputCode5"
+                            android:layout_width="35dp"
+                            android:layout_height="45dp"
+                            android:gravity="center"
+                            android:imeOptions="actionNext"
+                            android:importantForAutofill="no"
+                            android:inputType="number"
+                            android:maxLength="1"
+                            android:textColor="#4E4E4E"
+                            android:textSize="24dp"
+                            android:fontFamily="@font/roboto_bold"
+                            tools:ignore="LabelFor"/>
+
+                        <EditText
+                            android:id="@+id/inputCode6"
+                            android:layout_width="35dp"
+                            android:layout_height="45dp"
+                            android:gravity="center"
+                            android:imeOptions="actionNext"
+                            android:importantForAutofill="no"
+                            android:inputType="number"
+                            android:maxLength="1"
+                            android:textColor="#4E4E4E"
+                            android:textSize="24dp"
+                            android:fontFamily="@font/roboto_bold"
+                            tools:ignore="LabelFor"/>
+
+                        <EditText
+                            android:id="@+id/inputCode7"
+                            android:layout_width="35dp"
+                            android:layout_height="45dp"
+                            android:gravity="center"
+                            android:imeOptions="actionNext"
+                            android:importantForAutofill="no"
+                            android:inputType="number"
+                            android:maxLength="1"
+                            android:textColor="#4E4E4E"
+                            android:textSize="24dp"
+                            android:fontFamily="@font/roboto_bold"
+                            tools:ignore="LabelFor"/>
+
+                        <EditText
+                            android:id="@+id/inputCode8"
+                            android:layout_width="35dp"
+                            android:layout_height="45dp"
+                            android:gravity="center"
+                            android:imeOptions="actionNext"
+                            android:importantForAutofill="no"
+                            android:inputType="number"
+                            android:maxLength="1"
+                            android:textColor="#4E4E4E"
+                            android:textSize="24dp"
+                            android:fontFamily="@font/roboto_bold"
+                            tools:ignore="LabelFor"/>
+
+
+                    </LinearLayout>
+
+                    <EditText
+                        android:id="@+id/textOTP"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="50dp"
+                        android:visibility="gone"/>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="10dp"
+                        android:layout_marginTop="30dp"
+                        android:padding="10dp"
+                        >
+
+                        <FrameLayout
+                            android:id="@+id/btn_Aktivasi"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <Button
+                                android:id="@+id/buttonVerify"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/button_yellow"
+                                android:padding="12dp"
+                                android:text="Aktivasi"
+                                android:textColor="@android:color/white"
+                                android:fontFamily="@font/roboto_bold"
+                                />
+
+                            <ProgressBar
+                                android:id="@+id/progressBar"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_gravity="center"
+                                android:visibility="gone"/>
+
+
+                        </FrameLayout>
+
+                        <LinearLayout
+                            android:id="@+id/ly_Login"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:paddingTop="10dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_below="@+id/btn_Aktivasi"
+                            android:layout_marginBottom="10dp"
+                            >
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:layout_marginRight="10dp"
+                                android:textSize="12dp"
+                                android:text="@string/sudah_punya_akun"
+                                android:paddingTop="4dp"
+                                android:paddingLeft="5dp"
+                                android:gravity="center"
+                                />
+
+                            <TextView
+                                android:id="@+id/txt_Login"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:textSize="14dp"
+                                android:text="@string/masuk"
+                                android:paddingTop="4dp"
+                                android:paddingLeft="5dp"
+                                android:fontFamily="@font/roboto_bold"
+                                android:textColor="@color/red"
+                                android:gravity="center"
+                                />
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="AAAA"
+                android:layout_gravity="center"
+                android:textSize="25dp"
+                />
+
+        </LinearLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+
+
+
+
+</RelativeLayout>

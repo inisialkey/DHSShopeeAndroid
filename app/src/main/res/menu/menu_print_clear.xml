@@ -1,0 +1,25 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Opname.OpnameBJActivity">
+    <item
+    android:id="@+id/action_bton"
+    android:icon="@android:drawable/stat_sys_data_bluetooth"
+    app:showAsAction="always"
+    android:title="Scanning Bluetooth"/>
+    <item
+        android:id="@+id/action_btoff"
+        android:icon="@android:drawable/ic_menu_close_clear_cancel"
+        app:showAsAction="always"
+        android:title="Disable Bluetooth"/>
+    <item
+        android:id="@+id/print"
+        android:icon="@drawable/ic_print"
+        app:showAsAction="always"
+        android:title="Print"/>
+    <item
+        android:id="@+id/action_clear"
+        android:icon="@android:drawable/ic_menu_delete"
+        app:showAsAction="always"
+        android:title="Clear"/>
+</menu>

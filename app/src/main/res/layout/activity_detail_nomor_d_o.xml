@@ -1,0 +1,543 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.fungsitama.dhsshopee.activity.driver.KENDARAAN.DetailNomorDOActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            app:cardCornerRadius="5dp"
+            app:cardElevation="5dp"
+            >
+
+            <androidx.core.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="15dp"
+                    android:layout_marginBottom="10dp"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_gravity="center_horizontal"
+                        >
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_marginRight="10dp"
+                            android:textSize="10dp"
+                            android:text="Tanggal Dibuat"
+                            android:paddingTop="4dp"
+                            android:paddingLeft="5dp"
+                            />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_gravity="center_horizontal"
+                        android:paddingBottom="5dp"
+                        >
+
+                        <TextView
+                            android:id="@+id/tv_TanggalTransaksi"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:hint="-"
+                            android:layout_marginRight="10dp"
+                            android:gravity="center|left"
+                            android:textSize="13dp"
+                            android:drawablePadding="5dp"
+                            android:textColor="#000"
+                            android:drawableLeft="@drawable/ic_date"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingTop="10dp"
+                        android:layout_gravity="center_horizontal"
+                        >
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_marginRight="10dp"
+                            android:textSize="10dp"
+                            android:text="@string/nomor_transaksi"
+                            android:paddingTop="4dp"
+                            android:paddingLeft="5dp"
+                            />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_gravity="center_horizontal"
+                        android:paddingBottom="5dp"
+                        >
+
+                        <TextView
+                            android:id="@+id/tv_NoTransaksi"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:hint="-"
+                            android:layout_marginRight="10dp"
+                            android:gravity="center|left"
+                            android:textSize="13dp"
+                            android:drawablePadding="5dp"
+                            android:textColor="#000"
+                            android:drawableLeft="@drawable/ic_invoice"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingTop="10dp"
+                        android:layout_gravity="center_horizontal"
+                        >
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_marginRight="10dp"
+                            android:textSize="10dp"
+                            android:text="@string/nomor_kendaraan"
+                            android:paddingTop="4dp"
+                            android:paddingLeft="5dp"
+                            />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_gravity="center_horizontal"
+                        android:paddingBottom="5dp"
+                        >
+
+                        <TextView
+                            android:id="@+id/tv_NoKendaraan"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:hint="-"
+                            android:layout_marginRight="10dp"
+                            android:gravity="center|left"
+                            android:textSize="13dp"
+                            android:drawablePadding="5dp"
+                            android:textColor="#000"
+                            android:drawableLeft="@drawable/ic_truck"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingTop="10dp"
+                        android:layout_gravity="center_horizontal"
+                        >
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textSize="10dp"
+                            android:text="@string/nomor_do"
+                            android:paddingTop="4dp"
+                            android:paddingLeft="5dp"
+                            />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_gravity="center_horizontal"
+                        android:paddingBottom="5dp"
+                        >
+
+                        <TextView
+                            android:id="@+id/tv_NoDo"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:hint="-"
+                            android:gravity="center|left"
+                            android:textSize="13dp"
+                            android:drawablePadding="5dp"
+                            android:textColor="#000"
+                            android:drawableLeft="@drawable/ic_truck"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/txt_Asal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingTop="10dp"
+                        android:layout_gravity="center_horizontal"
+                        >
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textSize="10dp"
+                            android:text="@string/asal"
+                            android:paddingTop="4dp"
+                            android:paddingLeft="5dp"
+                            />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_gravity="center_horizontal"
+                        android:paddingBottom="5dp"
+                        >
+
+                        <TextView
+                            android:id="@+id/tv_Asal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:hint="-"
+                            android:gravity="center|left"
+                            android:textSize="13dp"
+                            android:drawablePadding="5dp"
+                            android:textColor="#000"
+                            android:drawableLeft="@drawable/ic_bus"
+                            />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/txt_Tujuan"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingTop="10dp"
+                        android:layout_gravity="center_horizontal"
+                        >
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textSize="10dp"
+                            android:text="@string/tujuan"
+                            android:paddingTop="4dp"
+                            android:paddingLeft="5dp"
+                            />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_gravity="center_horizontal"
+                        android:paddingBottom="5dp"
+                        >
+
+                        <TextView
+                            android:id="@+id/tv_Tujuan"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:hint="-"
+                            android:gravity="center|left"
+                            android:textSize="13dp"
+                            android:drawablePadding="5dp"
+                            android:textColor="#000"
+                            android:drawableLeft="@drawable/ic_bus"
+                            />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingTop="10dp"
+                        android:layout_gravity="center_horizontal"
+                        >
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textSize="10dp"
+                            android:text="@string/status_kendaraan"
+                            android:paddingTop="4dp"
+                            android:paddingLeft="5dp"
+                            />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_gravity="center_horizontal"
+                        android:paddingBottom="5dp"
+                        >
+
+                        <TextView
+                            android:id="@+id/tv_Status"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:hint="-"
+                            android:gravity="center|left"
+                            android:textSize="13dp"
+                            android:drawablePadding="5dp"
+                            android:textColor="#000"
+                            android:drawableLeft="@drawable/ic_status"
+                            />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingTop="10dp"
+                        android:layout_gravity="center_horizontal"
+                        >
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textSize="10dp"
+                            android:text="@string/jumlah_koli"
+                            android:paddingTop="4dp"
+                            android:paddingLeft="5dp"
+                            />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_gravity="center_horizontal"
+                        >
+
+                        <TextView
+                            android:id="@+id/tv_Koli"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:hint="-"
+                            android:textSize="14dp"
+                            android:gravity="center|left"
+                            android:drawablePadding="5dp"
+                            android:layout_marginRight="5dp"
+                            android:textColor="#000"
+                            android:drawableLeft="@drawable/ic_koli"
+                            />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingTop="10dp"
+                        android:layout_gravity="center_horizontal"
+                        >
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textSize="10dp"
+                            android:text="@string/berat_kg"
+                            android:paddingTop="4dp"
+                            android:paddingLeft="5dp"
+                            />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_gravity="center_horizontal"
+                        >
+
+                        <TextView
+                            android:id="@+id/tv_Berat"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:hint="-"
+                            android:textSize="14dp"
+                            android:gravity="center|left"
+                            android:drawablePadding="5dp"
+                            android:layout_marginRight="5dp"
+                            android:textColor="#000"
+                            android:drawableLeft="@drawable/ic_berat1"
+                            />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingTop="10dp"
+                        android:layout_gravity="center_horizontal"
+                        >
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textSize="10dp"
+                            android:text="@string/jumlah_kuantitas"
+                            android:paddingTop="4dp"
+                            android:paddingLeft="5dp"
+                            />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_gravity="center_horizontal"
+                        >
+
+                        <TextView
+                            android:id="@+id/tv_Kuantitas"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:hint="-"
+                            android:textSize="14dp"
+                            android:gravity="center|left"
+                            android:drawablePadding="5dp"
+                            android:layout_marginRight="5dp"
+                            android:textColor="#000"
+                            android:drawableLeft="@drawable/ic_kuantitas"
+                            />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingTop="10dp"
+                        android:layout_gravity="center_horizontal"
+                        >
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textSize="10dp"
+                            android:text="@string/total_qr_code"
+                            android:paddingTop="4dp"
+                            android:paddingLeft="5dp"
+                            />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_gravity="center_horizontal"
+                        >
+
+                        <TextView
+                            android:id="@+id/tv_QrCode"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:hint="-"
+                            android:textSize="14dp"
+                            android:gravity="center|left"
+                            android:drawablePadding="5dp"
+                            android:layout_marginRight="5dp"
+                            android:textColor="#000"
+                            android:drawableLeft="@drawable/ic_qr_code"
+                            />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingTop="10dp"
+                        android:layout_gravity="center_horizontal"
+                        >
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textSize="10dp"
+                            android:text="@string/deskripsi"
+                            android:paddingTop="4dp"
+                            android:paddingLeft="5dp"
+                            />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_gravity="center_horizontal"
+                        >
+
+                        <TextView
+                            android:id="@+id/tv_Deskripsi"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:hint="-"
+                            android:textSize="14dp"
+                            android:gravity="center|left"
+                            android:drawablePadding="5dp"
+                            android:layout_marginRight="5dp"
+                            android:textColor="#000"
+                            android:drawableLeft="@drawable/ic_detail"
+                            />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </androidx.core.widget.NestedScrollView>
+
+
+
+        </androidx.cardview.widget.CardView>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

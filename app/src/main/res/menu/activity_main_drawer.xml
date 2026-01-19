@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@android:drawable/ic_menu_set_as"
+            android:title="Beranda" />
+        <item
+            android:id="@+id/nav_entri"
+            android:icon="@android:drawable/ic_menu_set_as"
+            android:title="Entri Data" />
+        <item
+            android:id="@+id/nav_loadingra"
+            android:icon="@android:drawable/ic_menu_set_as"
+            android:title="Loading RA" />
+        <item
+            android:id="@+id/nav_unloadingwh"
+            android:icon="@android:drawable/ic_menu_set_as"
+            android:title="Unloading WH" />
+
+        <item
+            android:id="@+id/nav_prepareoutwh"
+            android:icon="@android:drawable/ic_menu_set_as"
+            android:title="Prepare Out WH" />
+        <item
+            android:id="@+id/nav_prosesoutwh"
+            android:icon="@android:drawable/ic_menu_set_as"
+            android:title="Proses Out WH" />
+        <item
+            android:id="@+id/nav_loadingflight"
+            android:icon="@android:drawable/ic_menu_set_as"
+            android:title="Loading Flight" />
+        <item
+            android:id="@+id/nav_incomingwh"
+            android:icon="@android:drawable/ic_menu_set_as"
+            android:title="Incoming WH" />
+    </group>
+
+
+</menu>

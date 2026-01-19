@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.fungsitama.dhsshopee.activity.driver.KENDARAAN.TambahNomorDOActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            app:cardCornerRadius="5dp"
+            app:cardElevation="5dp"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="15dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center"
+                    >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:text="@string/tambah_no_do"
+                        android:textSize="15dp"
+                        android:gravity="center|left"
+                        android:fontFamily="@font/roboto_bold"
+                        android:layout_marginBottom="10dp"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center_horizontal"
+                    >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:paddingLeft="5dp"
+                        android:paddingTop="4dp"
+                        android:text="@string/nomor_do"
+                        android:textSize="10dp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="20dp"
+                        android:layout_weight="1"
+                        android:textSize="10dp"
+                        android:text="@string/nomor_kendaraan"
+                        android:paddingTop="4dp"
+                        android:paddingLeft="5dp"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center_horizontal"
+                    android:paddingBottom="10dp"
+                    >
+
+                    <EditText
+                        android:id="@+id/et_NoDo"
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:hint="@string/hint_nomor_do"
+                        android:layout_marginRight="10dp"
+                        android:textSize="13dp"
+                        android:inputType="text"
+                        android:drawablePadding="5dp"
+                        android:textColor="#000"
+                        android:drawableLeft="@drawable/ic_bus"
+                        android:nextFocusDown="@id/spin_Tujuan"
+                        />
+
+                    <EditText
+                        android:id="@+id/et_NoKendaraan"
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:hint="@string/hint_nomor_kendaraan"
+                        android:textSize="13dp"
+                        android:inputType="number"
+                        android:drawablePadding="5dp"
+                        android:textColor="#000"
+                        android:drawableLeft="@drawable/ic_truck"
+                        android:enabled="false"
+                        />
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="10dp"
+                    android:text="@string/asal"
+                    android:paddingTop="4dp"
+                    android:paddingLeft="5dp"
+                    />
+                <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                    android:id="@+id/spin_Asal"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    app:hintText="KTRPST - Kantor Pusat"
+                    android:inputType="text"
+                    android:layout_marginBottom="10dp"
+                    android:drawablePadding="5dp"
+                    android:textColor="#000"
+                    android:drawableLeft="@drawable/ic_action_name"
+                    android:nextFocusDown="@id/et_Koli"
+                    />
+                <EditText
+                    android:id="@+id/et_KodeAsal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text=""
+                    android:hint="Asal"
+                    android:paddingStart="20dp"
+                    android:textSize="13dp"
+                    android:visibility="gone"
+                    android:inputType="text"
+                    />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="10dp"
+                    android:text="@string/tujuan"
+                    android:paddingTop="4dp"
+                    android:paddingLeft="5dp"
+                    />
+                <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                    android:id="@+id/spin_Tujuan"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    app:hintText="@string/hint_pilih_tujuan"
+                    android:inputType="text"
+                    android:layout_marginBottom="10dp"
+                    android:drawablePadding="5dp"
+                    android:textColor="#000"
+                    android:drawableLeft="@drawable/ic_action_name"
+                    android:nextFocusDown="@id/et_Koli"
+                    />
+                <EditText
+                    android:id="@+id/et_KodeTujuan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text=""
+                    android:hint="Asal"
+                    android:paddingStart="20dp"
+                    android:textSize="13dp"
+                    android:visibility="gone"
+                    android:inputType="text"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center_horizontal"
+                    >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="20dp"
+                        android:layout_weight="1"
+                        android:layout_marginRight="5dp"
+                        android:textSize="10dp"
+                        android:text="@string/jumlah_koli"
+                        android:paddingTop="4dp"
+                        android:paddingLeft="5dp"
+                        />
+
+                    <TextView
+                        android:layout_width="1dp"
+                        android:layout_height="20dp"
+                        android:textSize="10dp"
+                        android:text="Satuan"
+                        android:visibility="gone"
+                        android:paddingTop="4dp"
+                        android:paddingLeft="5dp"
+                        />
+
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="20dp"
+                        android:layout_weight="1"
+                        android:textSize="10dp"
+                        android:layout_marginRight="5dp"
+                        android:text="@string/berat_kg"
+                        android:paddingTop="4dp"
+                        android:paddingLeft="5dp"
+                        />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="20dp"
+                        android:layout_weight="1"
+                        android:textSize="10dp"
+                        android:text="@string/jumlah_kuantitas"
+                        android:paddingTop="4dp"
+                        android:paddingLeft="5dp"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center_horizontal"
+                    >
+
+                    <EditText
+                        android:id="@+id/et_Koli"
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:hint="0"
+                        android:textSize="14dp"
+                        android:inputType="number"
+                        android:drawablePadding="5dp"
+                        android:layout_marginRight="5dp"
+                        android:textColor="#000"
+                        android:maxLength="4"
+                        android:drawableLeft="@drawable/ic_koli"
+                        android:nextFocusDown="@id/et_Berat"
+                        />
+
+
+                    <EditText
+                        android:id="@+id/et_Berat"
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:hint="0 Kg"
+                        android:textSize="14dp"
+                        android:inputType="number"
+                        android:drawablePadding="5dp"
+                        android:layout_marginRight="5dp"
+                        android:textColor="#000"
+                        android:maxLength="5"
+                        android:drawableLeft="@drawable/ic_berat1"
+                        android:nextFocusDown="@id/et_Kuantitas"
+                        />
+                    <EditText
+                        android:id="@+id/et_Kuantitas"
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:hint="0"
+                        android:textSize="14dp"
+                        android:inputType="number"
+                        android:drawablePadding="5dp"
+                        android:textColor="#000"
+                        android:maxLength="5"
+                        android:drawableLeft="@drawable/ic_kuantitas"
+                        android:nextFocusDown="@id/et_Deskripsi"
+                        />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="10dp"
+                    android:text="@string/deskripsi"
+                    android:paddingTop="4dp"
+                    android:paddingLeft="5dp"
+                    />
+
+                <EditText
+                    android:id="@+id/et_Deskripsi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/hint_deskripsi"
+                    android:textSize="14dp"
+                    android:inputType="textMultiLine"
+                    android:lines="3"
+                    android:maxLines="6"
+                    android:drawablePadding="5dp"
+                    android:textColor="#000"
+                    android:scrollbars="vertical"
+                    android:drawableLeft="@drawable/ic_detail"
+                    android:nextFocusDown="@drawable/blue_button_background"
+                    />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal"
+        android:layout_alignParentBottom="true"
+        >
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_Simpan"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            android:background="@drawable/blue_button_background"
+            android:padding="12dp"
+            android:text="Simpan"
+            android:textColor="@android:color/white"
+            android:layout_alignParentBottom="true"
+            android:fontFamily="@font/roboto_bold"
+            />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

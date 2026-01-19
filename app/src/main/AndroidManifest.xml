@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:dist="http://schemas.android.com/apk/distribution"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.fungsitama.dhsshopee">
+
+    <dist:module dist:instant="true" />
+
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.READ_PHONE_NUMBERS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+
+    <application
+        android:name=".util.FCTApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_logodhs02"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:icon,android:theme">
+        <activity android:name=".activity.login.PeringatanAkunActivity"></activity>
+        <activity android:name=".activity.dhs.Loading.DaftarLoadingDetailActivity" />
+        <activity android:name=".activity.login.AktivasiAkunActivity" />
+        <activity android:name=".activity.login.VerifyOTPActivity" />
+        <activity android:name=".activity.login.SendOTPActivity" />
+        <activity android:name=".activity.dhs.Loading.DaftarGambarBarcodeManualActivity" />
+        <activity android:name=".activity.dashboard.DETAIL.DetailDaftarUnloadingActivity" />
+        <activity android:name=".activity.dashboard.DETAIL.DetailDaftarLoadingActivity" />
+        <activity android:name=".activity.dhs.Unloading.DetailListBarcodeUnloadingActivity" />
+        <activity android:name=".activity.dhs.Unloading.TambahBarcodeManualUnloadingActivity" />
+        <activity android:name=".activity.dhs.Unloading.ScanBarcodeUnloadingActivity" />
+        <activity android:name=".activity.dhs.Unloading.DaftarUnloadingActivity" />
+        <activity android:name=".activity.dhs.Loading.TambahBarcodeManualActivity" />
+        <activity android:name=".activity.dhs.Loading.HistoryDeletedBarcodeLoadingActivity" />
+        <activity android:name=".activity.dhs.Loading.DetailListBarcodeActivity" />
+        <activity android:name=".activity.dhs.Loading.DaftarLoadingActivity" />
+        <activity android:name=".activity.dhs.Loading.ScanBarcodeLoadingActivity" />
+        <activity android:name=".activity.dhs.DaftarMuatBarangActivity" />
+        <activity android:name=".activity.dhs.Loading.TambahMuatBarangActivity" />
+
+        <uses-library
+            android:name="com.google.android.maps"
+            android:required="true" />
+
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyDx_RSeABF9BLi12aOumpsDVQcPSfrjFnk" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity android:name=".activity.driver.KENDARAAN.DaftarReturDOActivity" />
+        <activity android:name=".activity.driver.KENDARAAN.DaftarReturActivity" />
+        <activity android:name=".activity.driver.KENDARAAN.DaftarKendaraanActivity" />
+        <activity android:name=".activity.driver.KENDARAAN.DetailNomorDOActivity" />
+        <activity android:name=".activity.driver.KENDARAAN.DaftarScanNomorDOActivity" />
+        <activity android:name=".activity.driver.KENDARAAN.TambahNomorDOActivity" />
+        <activity android:name=".activity.driver.KENDARAAN.DaftarNomorDOActivity" />
+        <activity android:name=".activity.driver.KENDARAAN.DaftarPengirimanActivity" />
+        <activity android:name=".activity.driver.ORDER.OrderBaruActivity" />
+        <activity android:name=".activity.pdf.PDFViewActivity" />
+        <activity
+            android:name=".activity.login.ActivationRegsiterActivity"
+            android:theme="@style/Theme.AppCompat.Transparent.NoActionBar1" />
+        <activity
+            android:name=".activity.login.RegisterActivity"
+            android:theme="@style/Theme.AppCompat.Transparent.NoActionBar1" />
+        <activity
+            android:name=".activity.main.NavMenuActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.setting.PrintActivity"
+            android:theme="@style/Theme.AppCompat.Transparent.NoActionBar">
+            <intent-filter>
+                <data android:scheme="fct.print" />
+
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.login.SplashLoginActivity"
+            android:theme="@style/Theme.AppCompat.Transparent.NoActionBar" />
+        <activity android:name=".activity.login.LoginActivity" />
+        <activity
+            android:name=".activity.login.SplashActivity"
+            android:theme="@style/ActivityTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+        <!--
+<provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.fungsitama.dhsshopee.android.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths"/>
+        </provider>
+        -->
+        <receiver android:name=".activity.login.OTPReceiver">
+            <intent-filter>
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name=".MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".MyFirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>

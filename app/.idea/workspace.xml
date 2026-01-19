@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="360dfb92-8165-4ab3-bbf6-5bacf3e75b68" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/fungsitama/intiwiwh/Adapter/CekPalletAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/fungsitama/intiwiwh/Adapter/OutFGDetailAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/fungsitama/intiwiwh/Check/CekPalletActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/fungsitama/intiwiwh/Model/CekPallet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/fungsitama/intiwiwh/Model/PIDOutFG.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/fungsitama/intiwiwh/PengeluaranFG/OutFGDetailSJ2Activity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/fungsitama/intiwiwh/Printer/DeviceListActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/fungsitama/intiwiwh/Printer/PrinterCommands.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/fungsitama/intiwiwh/Printer/UnicodeFormatter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/fungsitama/intiwiwh/Printer/Utils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/fungsitama/intiwiwh/SJFGIn/MainSJFGInActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/fungsitama/intiwiwh/SJFGIn/MainSJFGInListActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/fungsitama/intiwiwh/SJFGOut/MainSJFGOutDetailBoxActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/fungsitama/intiwiwh/SJFGOut/MainSJFGOutListActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/fungsitama/intiwiwh/SJFGOut/MainSJFGOutScanActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/fungsitama/intiwiwh/SJPabrikIn/MainSJPabrikInScanActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/fungsitama/intiwiwh/SJPabrikOut/DetailSJPabrikOutActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/fungsitama/intiwiwh/SJPabrikOut/MainSJPabrikOutActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/fungsitama/intiwiwh/SJPabrikOut/MainSJPabrikOutScanActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/fungsitama/intiwiwh/SJPabrikOut/SJPabrikOutCompleteActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/fungsitama/intiwiwh/SJPabrikOut/SJPabrikOutPendingActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/fungsitama/intiwiwh/SupplyMaterial3/GroupBatchFilterActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/drawable-anydpi/ic_print.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/drawable-hdpi/ic_print.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/drawable-mdpi/ic_print.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/drawable-xhdpi/ic_print.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/drawable-xxhdpi/ic_print.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/layout/activity_cek_pallet.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/layout/activity_detail_sjpabrik_out.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/layout/activity_group_batch_filter.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/layout/activity_main_list_sjfgin.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/layout/activity_main_sjfgin.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/layout/activity_main_sjfgout_detail_box.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/layout/activity_main_sjfgout_list.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/layout/activity_main_sjfgout_scan.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/layout/activity_main_sjpabrik_in_scan.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/layout/activity_main_sjpabrik_out.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/layout/activity_main_sjpabrik_out_scan.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/layout/activity_out_fgdetail_sj2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/layout/activity_sjpabrikout_complete.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/layout/activity_sjpabrikout_pending.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/layout/list_out_fg_detail.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/layout/list_pallet.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/menu/menu_print_clear.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/release/output.json" beforeDir="false" afterPath="$PROJECT_DIR$/release/output.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fungsitama/intiwiwh/Adapter/CekLokasiAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fungsitama/intiwiwh/Adapter/CekLokasiAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fungsitama/intiwiwh/Adapter/GallerySparePartAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fungsitama/intiwiwh/Adapter/GallerySparePartAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fungsitama/intiwiwh/Adapter/ListProdukJadiAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fungsitama/intiwiwh/Adapter/ListProdukJadiAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fungsitama/intiwiwh/Adapter/ListSparePart2Adapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fungsitama/intiwiwh/Adapter/ListSparePart2Adapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fungsitama/intiwiwh/Adapter/OutQCHeadSJStatus_Adapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fungsitama/intiwiwh/Adapter/OutQCHeadSJStatus_Adapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fungsitama/intiwiwh/Adapter/SJListAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fungsitama/intiwiwh/Adapter/SJListAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fungsitama/intiwiwh/Adapter/SJListStatusAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fungsitama/intiwiwh/Adapter/SJListStatusAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fungsitama/intiwiwh/Adapter/WadahListAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fungsitama/intiwiwh/Adapter/WadahListAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fungsitama/intiwiwh/AdjustmentSP/FormAdjustmentSPInActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fungsitama/intiwiwh/AdjustmentSP/FormAdjustmentSPInActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fungsitama/intiwiwh/Check/CheckFluxActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fungsitama/intiwiwh/Check/CheckFluxActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fungsitama/intiwiwh/Check/CheckWireRodActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fungsitama/intiwiwh/Check/CheckWireRodActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fungsitama/intiwiwh/Interface/InstituteService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fungsitama/intiwiwh/Interface/InstituteService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fungsitama/intiwiwh/KartuStokBB/KartuStokBBActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fungsitama/intiwiwh/KartuStokBB/KartuStokBBActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fungsitama/intiwiwh/KartuStokSP/KartuStokSPActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fungsitama/intiwiwh/KartuStokSP/KartuStokSPActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fungsitama/intiwiwh/KirimSJGudang/MainSJGudangActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fungsitama/intiwiwh/KirimSJGudang/MainSJGudangActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fungsitama/intiwiwh/KonfirmasiPemakaian/ScanKonfirmasiActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fungsitama/intiwiwh/KonfirmasiPemakaian/ScanKonfirmasiActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fungsitama/intiwiwh/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fungsitama/intiwiwh/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fungsitama/intiwiwh/Menu/Main_QCActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fungsitama/intiwiwh/Menu/Main_QCActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fungsitama/intiwiwh/Menu/Menu_ProdukActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fungsitama/intiwiwh/Menu/Menu_ProdukActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fungsitama/intiwiwh/Menu/Menu_SparepartActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fungsitama/intiwiwh/Menu/Menu_SparepartActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fungsitama/intiwiwh/PengeluaranFG/OutFGListSJActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fungsitama/intiwiwh/PengeluaranFG/OutFGListSJActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fungsitama/intiwiwh/PerbaikanSJGudang/DetailPerbaikanSJGudangActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fungsitama/intiwiwh/PerbaikanSJGudang/DetailPerbaikanSJGudangActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fungsitama/intiwiwh/PerbaikanSJGudang/MainPerbaikanSJGudangActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fungsitama/intiwiwh/PerbaikanSJGudang/MainPerbaikanSJGudangActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fungsitama/intiwiwh/PindahLokasi/PindahLokasiSPActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fungsitama/intiwiwh/PindahLokasi/PindahLokasiSPActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fungsitama/intiwiwh/RequestSparepart/NewReqSPActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fungsitama/intiwiwh/RequestSparepart/NewReqSPActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fungsitama/intiwiwh/ReturnSparepart/FormReturSPActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fungsitama/intiwiwh/ReturnSparepart/FormReturSPActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fungsitama/intiwiwh/ScanPemakaianBahanBaku/ScanPemakaianProduksiActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fungsitama/intiwiwh/ScanPemakaianBahanBaku/ScanPemakaianProduksiActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fungsitama/intiwiwh/SparePart/SlideshowDialogFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fungsitama/intiwiwh/SparePart/SlideshowDialogFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fungsitama/intiwiwh/SparePart/TambahFotoActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fungsitama/intiwiwh/SparePart/TambahFotoActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fungsitama/intiwiwh/StatusKirimFG/DetailStatusKirimFGPabrikActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fungsitama/intiwiwh/StatusKirimFG/DetailStatusKirimFGPabrikActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fungsitama/intiwiwh/StatusKirimFG/MainStatusKirimFGPabrikActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fungsitama/intiwiwh/StatusKirimFG/MainStatusKirimFGPabrikActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fungsitama/intiwiwh/SupplyMaterial2/ListFilterBatchActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fungsitama/intiwiwh/SupplyMaterial2/ListFilterBatchActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fungsitama/intiwiwh/SupplyMaterial3/GroupBatchActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fungsitama/intiwiwh/SupplyMaterial3/GroupBatchActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fungsitama/intiwiwh/SupplyMaterial3/MainSupplyActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fungsitama/intiwiwh/SupplyMaterial3/MainSupplyActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fungsitama/intiwiwh/TerimaCutwire/KonfirmasiTerimaCWActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fungsitama/intiwiwh/TerimaCutwire/KonfirmasiTerimaCWActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fungsitama/intiwiwh/TimbangProduk2/ListTimbangProdukActivity2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fungsitama/intiwiwh/TimbangProduk2/ListTimbangProdukActivity2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fungsitama/intiwiwh/TimbangProduk2/TimbangProdukActivity2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fungsitama/intiwiwh/TimbangProduk2/TimbangProdukActivity2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fungsitama/intiwiwh/TimbangProduk2/TimbangProdukDetail2Activity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fungsitama/intiwiwh/TimbangProduk2/TimbangProdukDetail2Activity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fungsitama/intiwiwh/TimbangProduk2/TimbangProdukDetailPending2Activity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fungsitama/intiwiwh/TimbangProduk2/TimbangProdukDetailPending2Activity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fungsitama/intiwiwh/TimbangProduk2/TimbangProdukNext2Activity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fungsitama/intiwiwh/TimbangProduk2/TimbangProdukNext2Activity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fungsitama/intiwiwh/TimbangProduk2/TimbangProdukPending2Activity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fungsitama/intiwiwh/TimbangProduk2/TimbangProdukPending2Activity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fungsitama/intiwiwh/Util/POSTAPIRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fungsitama/intiwiwh/Util/POSTAPIRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fungsitama/intiwiwh/Util/RestService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fungsitama/intiwiwh/Util/RestService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fungsitama/intiwiwh/Wadah/PendataanWadahActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fungsitama/intiwiwh/Wadah/PendataanWadahActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fungsitama/intiwiwh/pembungkus/check/CheckPembungkusActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fungsitama/intiwiwh/pembungkus/check/CheckPembungkusActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fungsitama/intiwiwh/pembungkus/kartustok/KartuStokPembungkusActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fungsitama/intiwiwh/pembungkus/kartustok/KartuStokPembungkusActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fungsitama/intiwiwh/pembungkus/supply/SupplyPembungkusActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fungsitama/intiwiwh/pembungkus/supply/SupplyPembungkusActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/layout/activity_adjustment_spin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/activity_adjustment_spin.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/layout/activity_ambil_foto.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/activity_ambil_foto.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/layout/activity_check_flux.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/activity_check_flux.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/layout/activity_konfirmasi_terima_cw.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/activity_konfirmasi_terima_cw.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/layout/activity_main__qc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/activity_main__qc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/layout/activity_main_kirim_fgnew.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/activity_main_kirim_fgnew.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/layout/activity_main_supply.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/activity_main_supply.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/layout/activity_menu__pembungkus.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/activity_menu__pembungkus.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/layout/activity_menu__produk.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/activity_menu__produk.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/layout/activity_menu__warehouse.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/activity_menu__warehouse.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/layout/activity_opname_bj.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/activity_opname_bj.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/layout/activity_opname_sp.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/activity_opname_sp.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/layout/activity_pindah_lokasi_spcek.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/activity_pindah_lokasi_spcek.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/layout/activity_scan_in_sjfgnew.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/activity_scan_in_sjfgnew.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/layout/activity_scan_konfirmasi.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/activity_scan_konfirmasi.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/layout/activity_scan_pemakaian_bb.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/activity_scan_pemakaian_bb.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/layout/activity_supply_pembungkus.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/activity_supply_pembungkus.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/layout/activity_upload_test2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/activity_upload_test2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/layout/content_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/content_main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/layout/device_list.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/device_list.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/layout/device_name.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/device_name.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/layout/fg_item_list_pallet.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/fg_item_list_pallet.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/layout/item_outqc_sjfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/item_outqc_sjfg.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/layout/item_sjfg_ingudang.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/item_sjfg_ingudang.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/layout/list_lokasi.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/list_lokasi.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/layout/sj_list.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/sj_list.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/values/api_key.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/values/api_key.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/values/colors.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/values/colors.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/values/strings.xml" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="testRunner" value="GRADLE" />
+    <option name="delegatedBuild" value="true" />
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view />
+      </state>
+    </system>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-10" />
+    <option name="width" value="980" />
+    <option name="height" value="1040" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="AndroidView" />
+      <pane id="ProjectPane" />
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="360dfb92-8165-4ab3-bbf6-5bacf3e75b68" name="Default Changelist" comment="" />
+      <created>1581061461277</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1581061461277</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="0" width="784" height="832" extended-state="0" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" visible="true" weight="0.32872927" />
+      <window_info id="Structure" side_tool="true" />
+      <window_info id="Build Variants" side_tool="true" />
+      <window_info id="Image Layers" />
+      <window_info id="Designer" />
+      <window_info id="Resources Explorer" />
+      <window_info id="Capture Tool" />
+      <window_info id="Favorites" side_tool="true" />
+      <window_info id="Captures" order="0" weight="0.25" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="TODO" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Build" visible="true" />
+      <window_info anchor="right" id="Capture Analysis" />
+      <window_info anchor="right" id="Gradle" />
+      <window_info anchor="right" id="Theme Preview" />
+      <window_info anchor="right" id="Palette&#9;" />
+    </layout>
+  </component>
+</project>

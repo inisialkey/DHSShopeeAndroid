@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    xmlns:sweet="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="8dp"
+    android:layout_marginLeft="6dp"
+    android:layout_marginRight="6dp"
+    android:layout_marginBottom="4dp"
+    sweet:cardElevation="5dp"
+    sweet:cardCornerRadius="5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/layout_Detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:foreground="?android:attr/selectableItemBackgroundBorderless"
+            android:layout_marginBottom="2dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="2dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="20dp"
+                    android:layout_weight="1"
+                    android:paddingLeft="5dp"
+                    android:paddingTop="4dp"
+                    android:text="Nomor Transaksi"
+                    android:textSize="10dp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="20dp"
+                    android:layout_weight="1"
+                    android:paddingLeft="5dp"
+                    android:paddingTop="4dp"
+                    android:text="@string/status_kendaraan"
+                    android:textAlignment="textEnd"
+                    android:textSize="10dp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:paddingBottom="3dp">
+
+
+                <TextView
+                    android:id="@+id/txt_noTrans"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawableLeft="@drawable/ic_invoice"
+                    android:drawablePadding="5dp"
+                    android:gravity="center|left"
+                    android:text="-"
+                    android:fontFamily="@font/roboto_bold"
+                    android:textColor="#000"
+                    android:textSize="13dp" />
+
+                <FrameLayout
+                    android:id="@+id/fl_Asal"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:visibility="gone"
+                    >
+
+                    <TextView
+                        android:id="@+id/txt_Asal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:drawableLeft="@drawable/ic_bus"
+                        android:text="Asal"
+                        android:textColor="#000"
+                        android:drawablePadding="5dp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:textSize="13dp"
+                        />
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/fl_Tujuan"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:visibility="gone"
+                    >
+
+                    <TextView
+                        android:id="@+id/txt_Tujuan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:drawableLeft="@drawable/ic_bus"
+                        android:text="Tujuan"
+                        android:textColor="#000"
+                        android:drawablePadding="5dp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:textSize="13dp" />
+
+                </FrameLayout>
+
+
+                <TextView
+                    android:id="@+id/txt_Status"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:drawableRight="@drawable/ic_status"
+                    android:drawablePadding="5dp"
+                    android:gravity="center|right"
+                    android:text="-"
+                    android:textColor="#000"
+                    android:fontFamily="@font/roboto_bold"
+                    android:textSize="13dp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="2dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="20dp"
+                    android:layout_weight="1"
+                    android:paddingLeft="5dp"
+                    android:paddingTop="4dp"
+                    android:text="Nomor Truck"
+                    android:textSize="10dp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="20dp"
+                    android:layout_weight="1"
+                    android:paddingLeft="5dp"
+                    android:paddingTop="4dp"
+                    android:text="Nama Supir"
+                    android:textAlignment="textEnd"
+                    android:textSize="10dp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:paddingBottom="3dp">
+
+
+                <TextView
+                    android:id="@+id/txt_noTruck"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawableLeft="@drawable/ic_nomor_truck"
+                    android:drawablePadding="5dp"
+                    android:gravity="center|left"
+                    android:text="-"
+                    android:textColor="#000"
+                    android:textSize="13dp" />
+
+
+                <TextView
+                    android:id="@+id/txt_NamaSupir"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:drawableRight="@drawable/ic_pengguna"
+                    android:drawablePadding="5dp"
+                    android:gravity="center|right"
+                    android:text="-"
+                    android:textColor="#000"
+                    android:textSize="13dp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="2dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="20dp"
+                    android:layout_weight="1"
+                    android:paddingLeft="5dp"
+                    android:paddingTop="4dp"
+                    android:text="Asal - Tujuan"
+                    android:textSize="10dp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:paddingBottom="3dp">
+
+
+                <TextView
+                    android:id="@+id/txt_asalTujuan"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawableLeft="@drawable/ic_truck"
+                    android:drawablePadding="5dp"
+                    android:gravity="center|left"
+                    android:text="-"
+                    android:textColor="#000"
+                    android:textSize="13dp"
+                    />
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="2dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="20dp"
+                    android:layout_weight="1.2"
+                    android:paddingLeft="5dp"
+                    android:paddingTop="4dp"
+                    android:text="Transit"
+                    android:textSize="10dp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="20dp"
+                    android:layout_weight="0.4"
+                    android:paddingLeft="5dp"
+                    android:paddingTop="4dp"
+                    android:text="Type Load"
+                    android:textAlignment="textStart"
+                    android:textSize="10dp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="20dp"
+                    android:layout_weight="0.4"
+                    android:paddingLeft="5dp"
+                    android:paddingTop="4dp"
+                    android:text="Total Barcode"
+                    android:textAlignment="textEnd"
+                    android:textSize="10dp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:paddingBottom="3dp">
+
+
+                <TextView
+                    android:id="@+id/txt_transit"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.2"
+                    android:drawableLeft="@drawable/ic_transit"
+                    android:drawablePadding="5dp"
+                    android:gravity="center|left"
+                    android:text="-"
+                    android:textColor="#000"
+                    android:textSize="13dp"
+                    />
+
+                <TextView
+                    android:id="@+id/txt_LoadType"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="0.4"
+                    android:drawableLeft="@drawable/ic_label"
+                    android:drawablePadding="5dp"
+                    android:gravity="center|left"
+                    android:text="LCL"
+                    android:textColor="#000"
+                    android:fontFamily="@font/roboto_bold"
+                    android:textSize="13dp" />
+
+                <TextView
+                    android:id="@+id/txt_TotalBarcdoe"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="0.4"
+                    android:drawableRight="@drawable/ic_qr_code"
+                    android:drawablePadding="5dp"
+                    android:gravity="center|right"
+                    android:text="0"
+                    android:textColor="#000"
+                    android:fontFamily="@font/roboto_bold"
+                    android:textSize="15dp" />
+
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_Detail"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:foreground="?android:attr/selectableItemBackgroundBorderless"
+                android:background="@drawable/button_background_line_item"
+                android:text="Detail Transaksi"
+                android:textAllCaps="false"
+                />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

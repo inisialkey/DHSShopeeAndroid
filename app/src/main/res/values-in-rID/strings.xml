@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">DHS Shopee</string>
+    <!--<string name="API">https://sigap.api.fungsitama.web.id/api/</string>-->
+    <string name="API">https://uat.api.sigap.biz/api/</string>
+    <!-- TODO: FRAGMENT TAB -->
+    <string name="home">Beranda</string>
+    <string name="activity">Menu</string>
+    <string name="profile">Akun</string>
+
+    <!-- TODO: SPLASH -->
+    <string name="please_wait">Mohon Tunggu ...</string>
+    <string name="empty_list">Data tidak ditemukan </string>
+    <!--Helper-->
+    <string name="search_hint">Cari</string>
+    <string name="action_search">Cari</string>
+    <string name="timeout">timeout</string>
+    <string name="nointernet">nointernet</string>
+    <string name="generic_error">generic_error</string>
+</resources>

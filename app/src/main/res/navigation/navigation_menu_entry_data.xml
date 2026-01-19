@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_menu"
+    app:startDestination="@id/navMenuActivity">
+
+    <activity
+        android:id="@+id/navMenuActivity"
+        android:name="com.fungsitama.dhsshopee.activity.main.NavMenuActivity"
+        android:label="fragment_favorite"
+        tools:layout="@layout/fragment_favorite" />
+    <activity
+        android:id="@+id/dataEntryActivity"
+        android:name="com.fungsitama.dhsshopee.activity.ENTRY.DataEntryActivity"
+        android:label="activity_data_entry"
+        tools:layout="@layout/activity_data_entry" />
+    <activity
+        android:id="@+id/detailDataEntryActivity"
+        android:name="com.fungsitama.dhsshopee.activity.ENTRY.DetailDataEntryActivity"
+        android:label="activity_detail_data_entry"
+        tools:layout="@layout/activity_detail_data_entry" />
+</navigation>

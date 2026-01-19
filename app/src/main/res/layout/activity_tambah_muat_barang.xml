@@ -1,0 +1,529 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.dhs.Loading.TambahMuatBarangActivity">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/ly_TambahDO"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="visible"
+            >
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="15dp"
+                android:layout_marginVertical="13dp"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="5dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="15dp"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_gravity="center"
+                        >
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:text="Gudang"
+                            android:textSize="18dp"
+                            android:gravity="center|left"
+                            android:fontFamily="@font/roboto_bold"
+                            android:layout_marginBottom="10dp"
+                            />
+
+                        <TextView
+                            android:id="@+id/icon_CheklistNomorDO"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:drawableRight="@drawable/ic_chekin"
+                            android:textSize="15dp"
+                            android:gravity="center|left"
+                            android:fontFamily="@font/roboto_bold"
+                            android:layout_marginBottom="10dp"
+                            android:visibility="gone"
+                            />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ly_formTambahNomorDO"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="visible">
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="14dp"
+                            android:text="Gudang Asal"
+                            android:paddingTop="4dp"
+                            android:paddingLeft="5dp"
+                            android:layout_marginBottom="8dp"
+                            />
+                        <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                            android:id="@+id/spin_Asal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:hintText="Pilih Gudang Asal"
+                            android:inputType="text"
+                            android:layout_marginBottom="10dp"
+                            android:drawablePadding="5dp"
+                            android:textColor="#000"
+                            android:drawableLeft="@drawable/ic_action_name"
+                            android:nextFocusDown="@id/et_Koli"
+                            />
+                        <EditText
+                            android:id="@+id/et_KodeAsal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text=""
+                            android:hint="Asal"
+                            android:paddingStart="20dp"
+                            android:textSize="13dp"
+                            android:visibility="gone"
+                            android:inputType="text"
+                            />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="14dp"
+                            android:text="Gudang Tujuan"
+                            android:paddingTop="4dp"
+                            android:paddingLeft="5dp"
+                            android:layout_marginBottom="8dp"
+                            />
+                        <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                            android:id="@+id/spin_Tujuan"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:hintText="Pilih Gudang Tujuan"
+                            android:inputType="text"
+                            android:layout_marginBottom="10dp"
+                            android:drawablePadding="5dp"
+                            android:textColor="#000"
+                            android:drawableLeft="@drawable/ic_action_name"
+                            android:nextFocusDown="@id/et_Koli"
+                            />
+                        <EditText
+                            android:id="@+id/et_KodeTujuan"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text=""
+                            android:hint="Asal"
+                            android:paddingStart="20dp"
+                            android:textSize="13dp"
+                            android:visibility="gone"
+                            android:inputType="text"
+                            />
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_marginBottom="8dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textSize="14dp"
+                                android:text="Gudang Transit"
+                                android:paddingBottom="5dp"
+                                android:paddingLeft="5dp"
+                                android:layout_marginRight="10dp"
+                                />
+
+                            <CheckBox
+                                android:id="@+id/selectTransit"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:scaleX="1.1"
+                                android:scaleY="1.1"
+
+                                />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/ly_Transit"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:visibility="gone">
+
+                            <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                                android:id="@+id/spin_Transit"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                app:hintText="Pilih Gudang Transit"
+                                android:inputType="text"
+                                android:drawablePadding="5dp"
+                                android:textColor="#000"
+                                android:drawableLeft="@drawable/ic_action_name"
+                                android:nextFocusDown="@id/et_Koli"
+                                />
+                            <EditText
+                                android:id="@+id/et_KodeTransit"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text=""
+                                android:hint="Transit"
+                                android:paddingStart="20dp"
+                                android:textSize="13dp"
+                                android:visibility="gone"
+                                android:inputType="text"
+                                />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="15dp"
+                android:layout_marginVertical="5dp"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="5dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="15dp"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_gravity="center"
+                        >
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:text="Truck"
+                            android:textSize="18dp"
+                            android:gravity="center|left"
+                            android:fontFamily="@font/roboto_bold"
+                            android:layout_marginBottom="10dp"
+                            />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ly_formTruck"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="visible">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_gravity="center_horizontal"
+                            >
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginRight="10dp"
+                                android:layout_weight="1"
+                                android:paddingLeft="5dp"
+                                android:paddingTop="4dp"
+                                android:text="Nama Supir"
+                                android:textSize="14dp"
+                                android:layout_marginTop="5dp"/>
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="20dp"
+                                android:layout_weight="1"
+                                android:textSize="10dp"
+                                android:text="@string/nomor_kendaraan"
+                                android:paddingTop="4dp"
+                                android:paddingLeft="5dp"
+                                android:visibility="gone"
+                                />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_gravity="center_horizontal"
+                            android:paddingBottom="10dp"
+                            >
+
+                            <EditText
+                                android:id="@+id/et_NamaSupir"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:hint="Masukan Nama Supir"
+                                android:layout_marginRight="10dp"
+                                android:textSize="13dp"
+                                android:inputType="text"
+                                android:drawablePadding="5dp"
+                                android:textColor="#000"
+                                android:drawableLeft="@drawable/ic_pengguna"
+                                android:nextFocusDown="@id/spin_Tujuan"
+                                />
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_gravity="center_horizontal"
+                            >
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginRight="10dp"
+                                android:layout_weight="1"
+                                android:paddingLeft="5dp"
+                                android:paddingTop="4dp"
+                                android:text="Nomor Truck"
+                                android:textSize="14dp" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="20dp"
+                                android:layout_weight="1"
+                                android:textSize="10dp"
+                                android:text="@string/nomor_kendaraan"
+                                android:paddingTop="4dp"
+                                android:paddingLeft="5dp"
+                                android:visibility="gone"
+                                />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_gravity="center_horizontal"
+                            android:paddingBottom="10dp"
+                            >
+
+                            <EditText
+                                android:id="@+id/et_NoTruck"
+                                android:layout_width="0dp"
+                                android:layout_height="40dp"
+                                android:layout_weight="1"
+                                android:hint="Masukan Nomor Truck"
+                                android:layout_marginRight="10dp"
+                                android:textSize="13dp"
+                                android:inputType="text"
+                                android:drawablePadding="5dp"
+                                android:textColor="#000"
+                                android:drawableLeft="@drawable/ic_truck"
+                                />
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="15dp"
+                android:layout_marginVertical="10dp"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="5dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="15dp"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_gravity="center"
+                        >
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:text="Load"
+                            android:textSize="18dp"
+                            android:gravity="center|left"
+                            android:fontFamily="@font/roboto_bold"
+                            android:layout_marginBottom="10dp"
+                            />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_gravity="center_horizontal"
+                        >
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="1"
+                            android:paddingLeft="5dp"
+                            android:paddingTop="4dp"
+                            android:text="Pilih Type"
+                            android:textSize="14dp"
+                            android:layout_marginTop="5dp"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="20dp"
+                            android:layout_weight="1"
+                            android:textSize="10dp"
+                            android:text="@string/nomor_kendaraan"
+                            android:paddingTop="4dp"
+                            android:paddingLeft="5dp"
+                            android:visibility="gone"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="visible">
+
+
+                        <RadioGroup
+                            android:id="@+id/rbGroup_pilih"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:checkedButton="@+id/rb_new"
+                            android:orientation="horizontal"
+                            android:padding="5dp"
+                            >
+
+                            <RadioButton
+                                android:id="@+id/rb_lcl"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="15dp"
+                                android:text="LCL"
+                                android:padding="2dp"
+                                android:checked="false"
+                                android:fontFamily="@font/roboto_bold"
+                                />
+
+                            <RadioButton
+                                android:id="@+id/rb_fcl"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="15dp"
+                                android:text="FCL"
+                                android:checked="true"
+                                android:padding="2dp"
+                                android:layout_marginStart="8dp"
+                                android:fontFamily="@font/roboto_bold"
+                                />
+
+                        </RadioGroup>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <LinearLayout
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal"
+        android:layout_alignParentBottom="true"
+        >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            android:padding="8dp"
+            android:textColor="@android:color/white"
+            android:layout_alignParentBottom="true"
+            android:fontFamily="@font/roboto_bold"
+            />
+
+        <Button
+            android:id="@+id/btn_Selanjutnya"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:visibility="visible"
+            android:layout_margin="5dp"
+            android:background="@drawable/button_background_dsbl"
+            android:text="Lanjutkan"
+            android:textColor="@android:color/white"
+            android:layout_alignParentBottom="true"
+            android:fontFamily="@font/roboto_bold"
+            />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

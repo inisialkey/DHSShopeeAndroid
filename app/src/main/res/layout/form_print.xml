@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            app:cardCornerRadius="5dp"
+            app:cardElevation="5dp"
+            android:layout_marginBottom="10dp"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center_horizontal"
+                    >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.3"
+                        android:text="Printer Status"
+                        android:textSize="13dp"
+                        android:fontFamily="@font/roboto_regular"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginRight="3dp"
+                        />
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:background="@drawable/offline"
+                        android:layout_gravity="center"/>
+
+                    <Switch
+                        android:id="@+id/switch1"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.8"
+                        android:gravity="center"
+                        android:textSize="12sp"
+                        android:checked="false"
+                        android:showText="false"
+                        android:textOff="No"
+                        android:textOn="Yes"
+                        android:thumb="@drawable/round_thumb"
+                        android:track="@drawable/round_track"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center_horizontal"
+                    >
+
+                    <TextView
+                        android:id="@+id/printInfo"
+                        android:layout_width="0dp"
+                        android:layout_height="20dp"
+                        android:layout_weight="1"
+                        android:textSize="10dp"
+                        android:text="Print Info"
+                        android:paddingTop="4dp"
+                        android:paddingLeft="5dp"
+                        />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="20dp"
+                        android:layout_weight="1"
+                        android:textSize="10dp"
+                        android:text="Switch connect to printer"
+                        android:paddingTop="4dp"
+                        android:paddingLeft="5dp"
+                        android:textAlignment="textEnd"
+                        />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:visibility="invisible"
+                    android:id="@+id/valprint"
+                    tools:text="Print info"/>
+                <ProgressBar
+                    android:layout_gravity="center"
+                    android:layout_width="100dp"
+                    android:layout_height="1dp"
+                    android:visibility="invisible"
+                    android:id="@+id/printLoading"/>
+                <TextView
+                    android:id="@+id/loadingInfo"
+                    android:visibility="invisible"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textSize="20dp"
+                    tools:text="Please Wait"/>
+                <Button
+                    android:id="@+id/transactionButton"
+                    android:text="TEST SERVICE"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:visibility="invisible"/>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+        <LinearLayout
+            android:layout_width="388dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:padding="20dp">
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/all"
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginRight="15dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_background"
+                android:fontFamily="@font/roboto_bold"
+                android:text="Print All"
+                android:textColor="@android:color/white" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/awb"
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginRight="15dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_background"
+                android:fontFamily="@font/roboto_bold"
+                android:text="Print SMU"
+                android:textColor="@android:color/white" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/koli"
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:layout_alignParentBottom="true"
+                android:layout_weight="1"
+                android:background="@drawable/button_background"
+                android:fontFamily="@font/roboto_bold"
+                android:text="Print Koli"
+                android:textColor="@android:color/white" />
+
+            <androidx.appcompat.widget.AppCompatCheckBox
+                android:id="@+id/csmu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SMU"
+                android:checked="true"
+                android:visibility="gone"
+                android:scaleX="1"
+                android:scaleY="1"
+                />
+
+            <androidx.appcompat.widget.AppCompatCheckBox
+                android:id="@+id/ckoli"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Koli"
+                android:checked="true"
+                android:visibility="gone"
+                android:scaleX="1"
+                android:scaleY="1"
+                />
+
+
+        </LinearLayout>
+        <CheckBox
+            android:id="@+id/pdf_invoice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="simpan qr sebagai pdf"
+            android:checked="true"
+            android:layout_marginTop="5dp"
+            />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

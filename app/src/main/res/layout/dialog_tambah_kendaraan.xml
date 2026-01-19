@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:id="@+id/dialog_tambah_kendaraan">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:id="@+id/txt_Title_Invoice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/tambah_kendaraan"
+                android:textSize="20dp"
+                android:fontFamily="@font/roboto_bold"
+                android:textAlignment="center"
+                />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:visibility="visible"
+            android:layout_height="0.2dp"
+            android:background="#888888"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"/>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="10dp"
+            android:layout_gravity="center_horizontal"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingLeft="5dp"
+                    android:paddingTop="4dp"
+                    android:text="@string/nomor_kendaraan"
+                    android:textSize="10dp" />
+
+                <EditText
+                    android:id="@+id/et_NoKendaraan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawableLeft="@drawable/ic_truck"
+                    android:drawablePadding="5dp"
+                    android:gravity="center|left"
+                    android:hint="@string/hint_nomor_kendaraan"
+                    android:textColor="#000"
+                    android:textSize="13dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center_horizontal"
+                    >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textSize="10dp"
+                        android:text="@string/stnk_expired"
+                        android:paddingLeft="5dp"
+                        />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textSize="10dp"
+                        android:text="@string/kir_expired"
+                        android:paddingLeft="5dp"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingTop="5dp"
+                    android:layout_gravity="center_horizontal"
+                    >
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:drawablePadding="5dp"
+                        >
+
+                        <EditText
+                            android:id="@+id/et_StnkExpired"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:focusableInTouchMode="true"
+                            android:hint="@string/hint_stnk_expired"
+                            android:inputType="text"
+                            android:paddingLeft="5dp"
+                            android:paddingTop="4dp"
+                            android:textColor="#000"
+                            android:textSize="12dp"
+                            android:layout_marginRight="25dp"
+                            />
+
+                        <ImageButton
+                            android:id="@+id/dt1"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:onClick="setDate"
+                            android:background="@drawable/ic_date"
+                            android:layout_alignParentRight="true"
+                            />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:drawablePadding="5dp"
+                        >
+
+                        <EditText
+                            android:id="@+id/et_KirExpired"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:focusableInTouchMode="true"
+                            android:hint="@string/hint_kir_expired"
+                            android:inputType="text"
+                            android:paddingLeft="5dp"
+                            android:paddingTop="4dp"
+                            android:textColor="#000"
+                            android:textSize="12dp"
+                            android:layout_marginRight="25dp"
+                            />
+
+                        <ImageButton
+                            android:id="@+id/dt2"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:onClick="setDate2"
+                            android:background="@drawable/ic_date"
+                            android:layout_alignParentRight="true"
+                            />
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/dt3send"
+                        android:layout_width="1dp"
+                        android:layout_height="1dp"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="10dp"
+            android:layout_gravity="center_horizontal"
+            >
+
+            <Button
+                android:id="@+id/btn_Kembali"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/kembali"
+                android:layout_marginTop="10dp"
+                android:textColor="#FFF"
+                android:background="@drawable/button_background_grey"
+                android:layout_marginRight="10dp"
+                android:visibility="visible"
+                />
+
+
+            <Button
+                android:id="@+id/btn_Tambah"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/tambah"
+                android:layout_marginTop="10dp"
+                android:textColor="#FFF"
+                android:background="@drawable/blue_button_background"
+                />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

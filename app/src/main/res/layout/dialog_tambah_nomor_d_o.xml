@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:id="@+id/dialog_tambah_nomor_d_o">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:id="@+id/txt_Title_Invoice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/tambah_nomor_do"
+                android:textSize="20dp"
+                android:fontFamily="@font/roboto_bold"
+                android:textAlignment="center"
+
+                />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:visibility="visible"
+            android:layout_height="0.2dp"
+            android:background="#888888"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="5dp"/>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal"
+            >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:paddingLeft="5dp"
+                android:paddingTop="4dp"
+                android:text="@string/nomor_do"
+                android:textSize="10dp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="20dp"
+                android:layout_weight="1"
+                android:textSize="10dp"
+                android:text="@string/nomor_kendaraan"
+                android:paddingTop="4dp"
+                android:paddingLeft="5dp"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal"
+            android:paddingBottom="10dp"
+            >
+
+            <EditText
+                android:id="@+id/et_NoDo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="@string/hint_nomor_do"
+                android:layout_marginRight="10dp"
+                android:textSize="13dp"
+                android:inputType="text"
+                android:drawablePadding="5dp"
+                android:textColor="#000"
+                android:drawableLeft="@drawable/ic_bus"
+                android:nextFocusDown="@id/spin_Tujuan"
+                />
+
+            <EditText
+                android:id="@+id/et_NoKendaraan"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="@string/hint_nomor_kendaraan"
+                android:textSize="13dp"
+                android:inputType="number"
+                android:drawablePadding="5dp"
+                android:textColor="#000"
+                android:drawableLeft="@drawable/ic_truck"
+                android:enabled="false"
+                />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="10dp"
+            android:text="@string/asal"
+            android:paddingTop="4dp"
+            android:paddingLeft="5dp"
+            />
+        <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+            android:id="@+id/spin_Asal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:hintText="@string/hint_pilih_asal"
+            android:inputType="text"
+            android:layout_marginBottom="10dp"
+            android:drawablePadding="5dp"
+            android:textColor="#000"
+            android:drawableLeft="@drawable/ic_action_name"
+            android:nextFocusDown="@id/et_Koli"
+            />
+        <EditText
+            android:id="@+id/et_KodeAsal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text=""
+            android:hint="Asal"
+            android:paddingStart="40dp"
+            android:textSize="12dp"
+            android:visibility="gone"
+            android:inputType="text"
+            />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="10dp"
+            android:text="@string/tujuan"
+            android:paddingTop="4dp"
+            android:paddingLeft="5dp"
+            />
+        <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+            android:id="@+id/spin_Tujuan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:hintText="KTRPST - Kantor Pusat"
+            android:inputType="text"
+            android:layout_marginBottom="10dp"
+            android:drawablePadding="5dp"
+            android:textColor="#000"
+            android:drawableLeft="@drawable/ic_action_name"
+            android:nextFocusDown="@id/et_Koli"
+            />
+        <EditText
+            android:id="@+id/et_KodeTujuan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text=""
+            android:hint="Asal"
+            android:paddingStart="20dp"
+            android:textSize="12dp"
+            android:visibility="gone"
+            android:inputType="text"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal"
+            >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="20dp"
+                android:layout_weight="1"
+                android:layout_marginRight="5dp"
+                android:textSize="10dp"
+                android:text="@string/jumlah_koli"
+                android:paddingTop="4dp"
+                android:paddingLeft="5dp"
+                />
+
+            <TextView
+                android:layout_width="1dp"
+                android:layout_height="20dp"
+                android:textSize="10dp"
+                android:text="Satuan"
+                android:visibility="gone"
+                android:paddingTop="4dp"
+                android:paddingLeft="5dp"
+                />
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="20dp"
+                android:layout_weight="1"
+                android:textSize="10dp"
+                android:layout_marginRight="5dp"
+                android:text="@string/berat_kg"
+                android:paddingTop="4dp"
+                android:paddingLeft="5dp"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="20dp"
+                android:layout_weight="1"
+                android:textSize="10dp"
+                android:text="@string/jumlah_kuantitas"
+                android:paddingTop="4dp"
+                android:paddingLeft="5dp"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal"
+            >
+
+            <EditText
+                android:id="@+id/et_Koli"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:hint="0"
+                android:textSize="14dp"
+                android:inputType="number"
+                android:drawablePadding="5dp"
+                android:layout_marginRight="5dp"
+                android:textColor="#000"
+                android:maxLength="4"
+                android:drawableLeft="@drawable/ic_koli"
+                android:nextFocusDown="@id/et_Berat"
+                />
+
+
+            <EditText
+                android:id="@+id/et_Berat"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:hint="0 Kg"
+                android:textSize="14dp"
+                android:inputType="number"
+                android:drawablePadding="5dp"
+                android:layout_marginRight="5dp"
+                android:textColor="#000"
+                android:maxLength="5"
+                android:drawableLeft="@drawable/ic_berat1"
+                android:nextFocusDown="@id/et_Kuantitas"
+                />
+            <EditText
+                android:id="@+id/et_Kuantitas"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:hint="0"
+                android:textSize="14dp"
+                android:inputType="number"
+                android:drawablePadding="5dp"
+                android:textColor="#000"
+                android:maxLength="5"
+                android:drawableLeft="@drawable/ic_kuantitas"
+                android:nextFocusDown="@id/et_Deskripsi"
+                />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="10dp"
+            android:text="@string/deskripsi"
+            android:paddingTop="4dp"
+            android:paddingLeft="5dp"
+            />
+
+        <EditText
+            android:id="@+id/et_Deskripsi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_deskripsi"
+            android:textSize="14dp"
+            android:inputType="textMultiLine"
+            android:lines="3"
+            android:maxLines="6"
+            android:drawablePadding="5dp"
+            android:textColor="#000"
+            android:scrollbars="vertical"
+            android:drawableLeft="@drawable/ic_detail"
+            android:nextFocusDown="@drawable/blue_button_background"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="10dp"
+            android:layout_gravity="center_horizontal"
+            >
+
+            <Button
+                android:id="@+id/btn_Kembali"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/kembali"
+                android:layout_marginTop="10dp"
+                android:textColor="#FFF"
+                android:background="@drawable/button_background_grey"
+                android:layout_marginRight="10dp"
+                android:visibility="visible"
+                />
+
+
+            <Button
+                android:id="@+id/btn_Tambah"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/tambah"
+                android:layout_marginTop="10dp"
+                android:textColor="#FFF"
+                android:background="@drawable/blue_button_background"
+                />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

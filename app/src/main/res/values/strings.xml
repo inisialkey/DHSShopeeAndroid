@@ -1,0 +1,125 @@
+<resources>
+    <string name="app_name">DHS Shopee</string>
+    <!--<string name="API">https://sigap.api.fungsitama.web.id/api/</string>-->
+    <string name="API">https://uat.api.sigap.biz/api/</string>
+    <!-- TODO: FRAGMENT TAB -->
+    <string name="home">Home</string>
+    <string name="activity">Menu</string>
+    <string name="profile">Account</string>
+
+    <!-- TODO: SPLASH -->
+    <string name="please_wait">Please wait ...</string>
+
+    <string name="empty_list">Data not found</string>
+    <!--Helper-->
+    <string name="search_hint">Cari</string>
+    <string name="action_search">Cari</string>
+    <string name="timeout">timeout</string>
+    <string name="nointernet">nointernet</string>
+    <string name="generic_error">generic_error</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="kosong">Masih Kosong</string>
+    <string name="daftar_order">Daftar Order</string>
+    <string name="order_baru">Order Baru</string>
+    <string name="nama_lengkap">Nama Lengkap</string>
+    <string name="masukkan_nama_lengkap">Masukkan Nama Lengkap</string>
+    <string name="nama_pengguna">Nama Pengguna</string>
+    <string name="masukkan_nama_pengguna">Masukkan Nama Pengguna</string>
+    <string name="kata_sandi">Kata Sandi</string>
+    <string name="masukkan_kata_sandi">Masukkan Kata Sandi</string>
+    <string name="email">Email</string>
+    <string name="masukkan_email">Masukkan Email</string>
+    <string name="masukkan_nomor_hp">Masukkan Nomor HP</string>
+    <string name="nomor_hp">Nomor Hp</string>
+    <string name="title_pendaftaran_akun">Pendaftaran Akun</string>
+    <string name="subtitle_pendaftaran_akun">Halaman Untuk Membuat Akun DHS Shopee</string>
+    <string name="daftar">Daftar</string>
+    <string name="sudah_punya_akun">Sudah Punya Akun ?</string>
+    <string name="masuk">Masuk</string>
+    <string name="title_aktivasi">AKUN ANDA BELUM KONFIRMASI REGISTRASI</string>
+    <string name="subtitle_aktivasi">Untuk konfirmasi registrasi, Cek email Anda !!</string>
+    <string name="title_email_token">Kode OTP di kirimkan ke-Email :</string>
+    <string name="subtitle_email_token">Belum dapet kode OTP ?</string>
+    <string name="masukan_token">Masukkan kode OTP dari email Anda</string>
+    <string name="aktivasi">Aktivasi</string>
+    <string name="kirim_ulang_token">Kirim Ulang Kode</string>
+    <string name="username">Nama Pengguna</string>
+    <string name="password">Kata Sandi</string>
+    <string name="nomor_kendaraan">Nomor Kendaraan</string>
+    <string name="tambah_no_do">Tambah Nomor DO</string>
+    <string name="status_saat_ini">Status Saat ini</string>
+    <string name="btn_update_status">Klik untuk update status</string>
+    <string name="hint_nomor_kendaraan">Masukkan No Kendaraan</string>
+    <string name="nomor_do">Nomor DO</string>
+    <string name="hint_nomor_do">Masukkan No DO</string>
+    <string name="tujuan">Tujuan</string>
+    <string name="hint_pilih_asal">Pilih Asal</string>
+    <string name="hint_pilih_tujuan">Pilih Tujuan</string>
+    <string name="jumlah_koli">Jumlah Koli</string>
+    <string name="hint_koli">Koli</string>
+    <string name="berat_kg">Jumlah Berat (Kg)</string>
+    <string name="hint_berat_kg">Berat (Kg)</string>
+    <string name="jumlah_kuantitas">Jumlah Barang</string>
+    <string name="total_qr_code">Total Barcode</string>
+    <string name="hint_kuantitas">Kuantitas</string>
+    <string name="deskripsi">Deskripsi</string>
+    <string name="hint_deskripsi">Masukan Deskripsi</string>
+    <string name="daftar_kendaraan">Daftar Kendaraan</string>
+    <string name="tambah_kendaraan">Tambah Kendaraan</string>
+    <string name="daftar_no_do">Daftar Nomor DO</string>
+    <string name="detail_no_do">Detail Nomor DO</string>
+    <string name="kembali">Kembali</string>
+    <string name="daftar_scan_do">Daftar Scan Barcode</string>>
+    <string name="tambah">Tambah</string>
+    <string name="dibuat_tanggal">Tanggal :</string>
+    <string name="kode_kendaraan">Kode Kendaraan</string>
+    <string name="nama_supir">Nama Supir : </string>
+    <string name="status_kendaraan">Status</string>
+    <string name="tambah_nomor_do">Tambah Nomor DO</string>
+    <string name="qr_code">QR Code</string>
+    <string name="nomor_transaksi">Nomor Transaksi</string>
+    <string name="scan_qr_code">Scan Kode Barcode</string>
+    <string name="cari_kode_qr">Scan Kode Barcode</string>
+    <string name="scanner">Scanner :</string>
+    <string name="tanggal_awal">Tanggal Awal</string>
+    <string name="tanggal_akhir">Tanggal Akhir</string>
+    <string name="daftar_penerimaan_no_do">Daftar Penerimaan Nomor DO</string>
+    <string name="scan_penerimaan_nomor_do">Scan Penerimaan Nomor DO</string>
+    <string name="daftar_pengeluaran_nomor_do">Daftar No Referensi Pengeluaran</string>
+    <string name="detail_pengeluaran_nomor_do">Detail No Referensi Pengeluaran</string>
+    <string name="tambah_no_referensi_pengeluaran">Tambah No Referensi Pengeluaran</string>
+    <string name="nomor_referensi">Nomor Referensi</string>
+    <string name="hint_no_referensi">Masukan No referensi</string>
+    <string name="agen">Agen</string>
+    <string name="pilih_agen">Pilih Agen</string>
+    <string name="daftar_penerimaan_barang">Daftar Penerimaan Agen</string>
+    <string name="nama_agen">Nama Agen : </string>
+    <string name="daftar_scan_penerimaan_barang">Daftar Scan Penerimaan Agen</string>
+    <string name="kendaraan">Kendaraan</string>
+    <string name="total_jumlah_kendaraan">Total Pengiriman</string>
+    <string name="lihat_semua">Lihat Semua</string>
+    <string name="pilih_kendaraan">Pilih Kendaraan</string>
+    <string name="daftar_pengiriman">Daftar Pengiriman</string>
+    <string name="stnk_expired">STNK Expired</string>
+    <string name="kir_expired">KIR Expired</string>
+    <string name="hint_stnk_expired">STNK Expired</string>
+    <string name="hint_kir_expired">KIR Expired</string>
+    <string name="daftar_retur">Daftar Retur</string>
+    <string name="daftar_delivered">Daftar Delivered</string>
+    <string name="daftar_in_dc">Daftar In DC</string>
+    <string name="daftar_out_dc">Daftar Out DC</string>
+    <string name="asal">Asal</string>
+    <string name="total_do">Total DO</string>
+    <string name="total_retur">Total Retur</string>
+    <string name="total_do_retur">Total DO Retur</string>
+    <string name="total_do_pengiriman">Total DO Pengiriman</string>
+    <string name="pengiriman">Pengiriman</string>
+    <string name="retur">Retur</string>
+    <string name="do_pengiriman">DO Pengiriman</string>
+    <string name="do_retur">DO Retur</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+
+</resources>

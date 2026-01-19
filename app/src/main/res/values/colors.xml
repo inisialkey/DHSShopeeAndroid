@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#FF0707</color>
+    <color name="colorPrimaryDark">#ED2615</color>
+    <color name="colorAccent">#FFC107</color>
+
+    <color name="softgreen">#B1F354</color>
+    <color name="softblue">#a9ddf5</color>
+    <color name="softred">#FFAAA3</color>
+
+    <!--colors for modern ui-->
+    <color name="whiteColor">#fff</color>
+    <color name="primaryTextColor">#2661FA</color>
+    <color name="loginBkColor">#f0f0f0</color>
+    <color name="cardColor">#ffffff</color>
+    <color name="textcardColor">#3f3f3f</color>
+    <color name="yellow">#F8BA0F</color>
+    <color name="goodgrey">#535353</color>
+    <color name="blue">#293859</color>
+    <color name="lightgrey">#EEEEEE</color>
+    <!--colros for card-->
+   <!-- <color name="whiteCardColor">#fff</color>
+    <color name="colorPrimary">#0188FF</color>
+    <color name="colorPrimaryDark">#148CDC</color>
+    <color name="colorAccent">#FF6F00</color>-->
+    <color name="snackbarActionColor">#FDDA24</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="grey">#E9EAEE</color>
+
+    <color name="light_black">#504f4f</color>
+    <color name="black">#000000</color>
+
+    <color name="green">#35de01</color>
+    <color name="darkgreen">#2eb703</color>
+    <color name="red">#d40909</color>
+    <color name="blues">#2196F3</color>
+    <color name="orange">#FF9800</color>
+    <color name="shadow">#66000000</color>
+    <color name="bgyelow">#cbbfff</color>
+    <color name="bgblue">#a9ddf5</color>
+
+    <color name="step_pager_previous_tab_color">#4433b5e5</color>
+    <color name="step_pager_selected_tab_color">#ff0099cc</color>
+    <color name="step_pager_next_tab_color">#10000000</color>
+
+    <!-- <color name="review_green">#ff669900</color> -->
+
+    <color name="text_light">#66000000</color>
+    <color name="instruction_text">#9E9E9E</color>
+    <color name="BLACK">#000000</color>
+    <color name="QRCodeBlackColor">#000000</color>
+    <color name="QRCodeWhiteColor">#ffffff</color>
+    <color name="WHITE">#ffffff</color>
+</resources>
