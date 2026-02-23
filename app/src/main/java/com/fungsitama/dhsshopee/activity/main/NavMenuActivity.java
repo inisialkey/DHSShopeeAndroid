@@ -70,35 +70,42 @@ public class NavMenuActivity extends AppCompatActivity implements BottomNavigati
 
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
+
         Fragment fragment = null;
-        switch (menuItem.getItemId()) {
-            case R.id.home_menu:
-                SharedPreferences.Editor sp = PreferenceManager.getDefaultSharedPreferences(NavMenuActivity.this).edit();
-                sp.putString("vtoken", vtoken);
-                sp.putString("vusername", vusername);
-                sp.putString("vtypeLogin", vtypeLogin);
-                sp.putString("typeUser", vtypeUser);
-                sp.putString("codeMaster", codeMaster);
-                sp.commit();
-                fragment = new Home_Driver_Fragment();
-                break;
 
-            case R.id.activity_menu:
-                SharedPreferences.Editor edit = PreferenceManager.getDefaultSharedPreferences(NavMenuActivity.this).edit();
-                edit.putString("vtoken", vtoken);
-                edit.putString("vusername", vusername);
-                edit.putString("vtypeLogin", vtypeLogin);
-                edit.putString("typeUser", vtypeUser);
-                edit.putString("codeMaster", codeMaster);
-                edit.commit();
-                fragment = new MenuDhsFragment();
+        int itemId = menuItem.getItemId();
 
-                break;
-            case R.id.profile_menu:
-                fragment = new AccountFragment();
-                break;
+        if (itemId == R.id.home_menu) {
+
+            savePreferences();
+
+            fragment = new Home_Driver_Fragment();
+
+        } else if (itemId == R.id.activity_menu) {
+
+            savePreferences();
+
+            fragment = new MenuDhsFragment();
+
+        } else if (itemId == R.id.profile_menu) {
+
+            fragment = new AccountFragment();
         }
+
         return loadFragment(fragment);
+    }
+
+    private void savePreferences() {
+        SharedPreferences.Editor sp =
+                PreferenceManager.getDefaultSharedPreferences(this).edit();
+
+        sp.putString("vtoken", vtoken);
+        sp.putString("vusername", vusername);
+        sp.putString("vtypeLogin", vtypeLogin);
+        sp.putString("typeUser", vtypeUser);
+        sp.putString("codeMaster", codeMaster);
+
+        sp.apply();
     }
 
     public void appExit() {

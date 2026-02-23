@@ -6,6 +6,13 @@
 
     <dist:module dist:instant="true" />
 
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
     <uses-permission android:name="android.permission.RECEIVE_SMS" />
     <uses-permission android:name="android.permission.READ_SMS" />
     <uses-permission android:name="android.permission.READ_PHONE_NUMBERS" />
@@ -34,7 +41,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:replace="android:icon,android:theme">
-        <activity android:name=".activity.login.PeringatanAkunActivity"></activity>
+        <activity android:name=".activity.login.PeringatanAkunActivity"/>
         <activity android:name=".activity.dhs.Loading.DaftarLoadingDetailActivity" />
         <activity android:name=".activity.login.AktivasiAkunActivity" />
         <activity android:name=".activity.login.VerifyOTPActivity" />
@@ -85,6 +92,7 @@
             android:name=".activity.main.NavMenuActivity"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
+            android:exported="true"
             android:name=".activity.setting.PrintActivity"
             android:theme="@style/Theme.AppCompat.Transparent.NoActionBar">
             <intent-filter>
@@ -101,6 +109,7 @@
             android:theme="@style/Theme.AppCompat.Transparent.NoActionBar" />
         <activity android:name=".activity.login.LoginActivity" />
         <activity
+            android:exported="true"
             android:name=".activity.login.SplashActivity"
             android:theme="@style/ActivityTheme">
             <intent-filter>
@@ -130,18 +139,18 @@
                 android:resource="@xml/file_paths"/>
         </provider>
         -->
-        <receiver android:name=".activity.login.OTPReceiver">
+        <receiver android:exported="true" android:name=".activity.login.OTPReceiver">
             <intent-filter>
                 <action android:name="android.provider.Telephony.SMS_RECEIVED" />
             </intent-filter>
         </receiver>
 
-        <service android:name=".MyFirebaseMessagingService">
+        <service android:exported="true" android:name=".MyFirebaseMessagingService">
             <intent-filter>
                 <action android:name="com.google.firebase.MESSAGING_EVENT" />
             </intent-filter>
         </service>
-        <service android:name=".MyFirebaseInstanceIDService">
+        <service android:exported="true" android:name=".MyFirebaseInstanceIDService">
             <intent-filter>
                 <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
             </intent-filter>

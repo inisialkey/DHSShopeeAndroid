@@ -1,7 +1,7 @@
 package com.fungsitama.dhsshopee.util;
 
 public class ApiConfig {
-    public static final String URL_API = "https://dhs.api.mycargotracking.com/api/";
+    public static final String URL_API = "https://dhs-shopee-api.fctbeta.com/api/";
 
     //Registrasi
     public static final String Registrasi = URL_API +"modules/global/register";
@@ -24,7 +24,7 @@ public class ApiConfig {
     //Daftar Pengiriman
     public static final String TambahPengiriman = URL_API + "modules/private/tracking/create";
     //Daftar Seluruh List Tracking
-    public static final String DaftarTracking = URL_API + "modules/private/tracking/list";
+//    public static final String DaftarTracking = URL_API + "modules/private/tracking/list";
     //Daftar Pengiriman
     public static final String DaftarPengiriman = URL_API + "modules/private/tracking/listPengiriman";
     //Daftar Retur

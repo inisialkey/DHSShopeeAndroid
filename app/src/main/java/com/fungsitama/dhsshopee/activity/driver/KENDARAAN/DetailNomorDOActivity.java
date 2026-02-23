@@ -105,23 +105,22 @@ public class DetailNomorDOActivity extends AppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        switch (item.getItemId()) {
-            case R.id.action_go_home: {
 
-                Intent intent = new Intent(DetailNomorDOActivity.this, NavMenuActivity.class);
-                startActivity(intent);
-                finish();
+        if (item.getItemId() == R.id.action_go_home) {
 
-                return true;
-            }
+            Intent intent = new Intent(
+                    DetailNomorDOActivity.this,
+                    NavMenuActivity.class
+            );
+
+            startActivity(intent);
+            finish();
+
+            return true;
         }
+
         return super.onOptionsItemSelected(item);
     }
-
-
-
-
-
 
     public void getDetailNoDo(){
 

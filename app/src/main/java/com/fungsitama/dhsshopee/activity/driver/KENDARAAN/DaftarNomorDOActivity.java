@@ -226,22 +226,22 @@ public class DaftarNomorDOActivity extends AppCompatActivity implements SwipeRef
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        switch (item.getItemId()) {
-            case R.id.action_go_home: {
 
-                Intent intent = new Intent(DaftarNomorDOActivity    .this, NavMenuActivity.class);
-                startActivity(intent);
-                finish();
+        if (item.getItemId() == R.id.action_go_home) {
 
-                return true;
-            }
+            Intent intent = new Intent(
+                    DaftarNomorDOActivity.this,
+                    NavMenuActivity.class
+            );
+
+            startActivity(intent);
+            finish();
+
+            return true;
         }
+
         return super.onOptionsItemSelected(item);
     }
-
-
-
-
 
     @Override
     public void onRestart()
